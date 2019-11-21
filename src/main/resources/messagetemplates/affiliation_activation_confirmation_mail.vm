@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Email Receipt</title>
+<style>
+	body
+	{
+		margin:0;
+		font-size:12px;
+		font-family:tahoma
+	}
+	.fl-email-outerTable
+	{
+		width:650px;
+	}
+	.fl-email-topHeader
+	{
+		background:#004481;
+		color:#fff;
+		height:63px
+	}
+	.fl-email-logo
+	{
+		width:550px;
+		padding-left:10px;
+	}
+	h1.emailHeading
+	{
+		color:#fff;
+		margin:0;
+		padding:0px;
+		font-size:18px;
+		font-style:italic;
+		font-weight:normal;
+	}
+	.liteFont
+	{
+		color:#999;
+	}
+	.emailDevider
+	{
+		height:1px;
+		background:#ccc;
+		border:none;
+		margin:20px 0;
+	}
+	.adviceRow
+	{
+		background:#fdd94d;
+		height:30px;
+		line-height:30px;
+		padding-left:10px;
+		color:#000;
+		font-weight:bold;
+		font-size:14px;
+		width:550px;
+	}
+	.adviceFlyinName
+	{
+		width:80px;
+		text-align:center;
+		line-height:30px;
+		height:30px;
+		color:#fff;
+		background:#04509c;
+		font-size:14px;
+	}
+
+</style>
+</head>
+
+<body>
+<table align="center" width="650" border="0" cellpadding="0" cellspacing="0" class="fl-email-outerTable">
+	<tr class="fl-email-topHeader">
+    	<td class="fl-email-logo">
+        	<img src="${baseurl}/images/email/flyinLogo.png" width="66" height="40" />
+        </td>
+         <td style="width:1050px;">
+        	<h1 class="emailHeading">AFFILIATE ACTIVATION - EMAIL CONFIRMATION</h1>
+        </td>
+    </tr>
+     <tr>
+    	<td colspan="2">
+    <p class="liteFont"><br>
+    	<em><strong>Welcome ${name},</strong></em>
+    </p>
+    <p class="liteFont">
+    	<em>Thank you for becoming a Affiliate Partner of Flyin.com <a href="${baseurl}">${baseurl}</a>
+						Your account is now Activated.</em>
+    </p>
+    <p class="liteFont">
+    	<em>>You can Log in with user credentials received during Registration.</em>	
+    </p
+     <p class="liteFont">
+     <em>Thankfully,<br>
+	<strong>Flyin Team,</strong><br>
+     Riyadh, Saudi Arabia.</em></p>
+       <hr class="emailDevider" />
+     </td>
+    </tr> 
+</table>
+
+</body>
+</html>
+

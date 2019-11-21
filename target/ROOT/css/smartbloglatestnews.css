@@ -1,0 +1,144 @@
+.blog-image {
+  overflow: hidden;
+  margin-bottom: 0px; }
+  .blog-image a {
+    display: block;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    @media only screen and (max-width: 767px) {
+      .blog-image a img {
+        width: 100%; } }
+    .blog-image a:hover {
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      -moz-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+      -webkit-transform: scale(1.1, 1.1);
+      transform: scale(1.1, 1.1); }
+
+#homepage-blog {
+  font-family: "Exo 2", sans-serif;
+  z-index: 1;
+  padding-top: 48px;
+  padding-bottom: 30px;
+  margin-bottom: 0; }
+  #homepage-blog .title_block {
+    font-family: "Exo 2", sans-serif;
+    text-align: center;
+    background: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 900;
+    border-top: 0;
+    padding-right: 0 !important; }
+    #homepage-blog .title_block:after {
+      display: none; }
+    #homepage-blog .title_block a {
+      color: #FFF;
+      font-weight: 900;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      #homepage-blog .title_block a:hover {
+        color: #435f9f;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+  #homepage-blog .block_content {
+    margin-top: 47px; }
+  #homepage-blog li {
+    position: relative;
+    margin-bottom: 30px; }
+    @media (max-width: 639px) {
+      #homepage-blog li {
+        width: 100% !important; } }
+    #homepage-blog li > .wrapper {
+      background: #FFF;
+      padding: 20px;
+      position: relative; }
+    #homepage-blog li .date-added {
+      position: absolute;
+      font-size: 16px;
+      color: #000;
+      background: #f6cd3e;
+      font-family: "PT Sans", sans-serif;
+      font-weight: 700;
+      top: -20px;
+      padding: 11px 12px; }
+    #homepage-blog li h5 {
+      margin-bottom: 11px; }
+      #homepage-blog li h5 a:hover {
+        color: #435f9f; }
+    #homepage-blog li .btn {
+      margin-top: 9px;
+      font-weight: 700; }
+      #homepage-blog li .btn:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #2f4c85;
+        z-index: 2;
+        left: 0;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+      #homepage-blog li .btn:hover:after {
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+        background: #ac8f2b; }
+    #homepage-blog li .product-name {
+      font-size: 24px;
+      font-family: "PT Sans", sans-serif;
+      font-weight: 700;
+      color: #000;
+      margin-top: 14px;
+      line-height: 30px; }
+    #homepage-blog li a.product-name {
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      -webkit-transition: 0.3s;
+      transition: 0.3s; }
+      #homepage-blog li a.product-name:hover {
+        color: #435f9f;
+        -moz-transition: 0.3s;
+        -o-transition: 0.3s;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+    #homepage-blog li .post-descr {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000;
+      font-family: "PT Sans", sans-serif; }
+    @media (min-width: 992px) {
+      #homepage-blog li.first-in-line {
+        clear: left; } }
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+      #homepage-blog li {
+        width: 50%;
+        float: left; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #homepage-blog li.first-item-of-tablet-line {
+        clear: left; } }
+    @media only screen and (max-width: 767px) {
+      #homepage-blog li.first-item-of-mobile-line {
+        clear: left; } }
+
+/*# sourceMappingURL=smartbloglatestnews.css.map */

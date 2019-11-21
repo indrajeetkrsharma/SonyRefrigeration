@@ -1,0 +1,106 @@
+#header-login {
+  float: right;
+  position: relative;
+  padding-right: 55px;
+  padding-top: 27px;
+  font-family: "PT Sans", sans-serif; }
+  @media (max-width: 991px) {
+    #header-login {
+      padding-right: 20px; } }
+  #header-login .header_user_info {
+    float: right; }
+    #header-login .header_user_info a {
+      font-weight: bold;
+      color: #242424;
+      font-size: 16px;
+      cursor: pointer; }
+    #header-login .header_user_info.current a:after {
+      content: "\f0d7";
+      font-family: "FontAwesome";
+      font-size: 16px;
+      line-height: 18px;
+      color: #242424;
+      padding-left: 11px; }
+    #header-login .header_user_info.current.active a:after {
+      content: "\f0d8"; }
+  #header-login .logout {
+    overflow: hidden;
+    margin-bottom: 0; }
+
+#header-login-content {
+  display: none;
+  width: 240px;
+  padding: 17px;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 53px;
+  z-index: 3;
+  background: #FFF;
+  color: #242424;
+  border: 1px solid #e4e4e4;
+  font-family: "PT Sans", sans-serif; }
+  #header-login-content label {
+    color: #242424;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px; }
+  #header-login-content .form-control {
+    height: 40px; }
+  #header-login-content .form-group.form-error input,
+  #header-login-content .form-group.form-error textarea {
+    border: 1px solid #f13340;
+    color: #f13340;
+    background: url(../../../../../img/icon/form-error.png) 96% 12px no-repeat #fff1f2; }
+  #header-login-content .form-group.form-ok input,
+  #header-login-content .form-group.form-ok textarea {
+    border: 1px solid #46a74e;
+    color: #35b33f;
+    background: url(../../../../../img/icon/form-ok.png) 96% 12px no-repeat #ddf9e1; }
+  #header-login-content .form-group.form-error .form-control, #header-login-content .form-group.form-ok .form-control {
+    padding-right: 30px; }
+  #header-login-content .submit {
+    padding-top: 5px;
+    margin-bottom: 21px; }
+    #header-login-content .submit i {
+      display: none; }
+    #header-login-content .submit button {
+      font-size: 18px;
+      padding: 6px;
+      width: 100%; }
+  #header-login-content .create {
+    font-size: 16px;
+    color: #848484;
+    display: inline-block;
+    margin-top: 9px; }
+    #header-login-content .create:hover {
+      color: #446dbf; }
+  #header-login-content .create_wrap {
+    margin-bottom: 0; }
+  #header-login-content li {
+    margin: 0;
+    padding: 0; }
+    #header-login-content li ul {
+      font-family: "PT Sans", sans-serif;
+      margin: 0 0 10px 0; }
+      #header-login-content li ul li {
+        display: block;
+        line-height: 35px; }
+        #header-login-content li ul li a {
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #242424;
+          padding: 0 10px 0 10px;
+          display: block; }
+          #header-login-content li ul li a:hover {
+            color: #446dbf; }
+          #header-login-content li ul li a i {
+            display: none; }
+    #header-login-content li .logout a {
+      width: 100%;
+      padding: 10px; }
+
+#create_header_account_error {
+  padding: 8px; }
+
+/*# sourceMappingURL=front.css.map */
