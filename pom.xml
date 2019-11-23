@@ -9,7 +9,7 @@
 	<name>SonyRefrigeration</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-		<spring.version>4.0.3.RELEASE</spring.version>
+		<spring.version>5.2.1.RELEASE</spring.version>
 		<slf4jVersion>1.6.1</slf4jVersion>
 	</properties>
 	<dependencies>
