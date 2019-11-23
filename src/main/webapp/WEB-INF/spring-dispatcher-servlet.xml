@@ -67,14 +67,14 @@
    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
       <property name="driverClassName" value="com.mysql.jdbc.Driver" />
       <!-- Local -->
-      <property name="url" value="jdbc:mysql://localhost:3306/sony" />
+      <!-- <property name="url" value="jdbc:mysql://localhost:3306/sony" />
       <property name="username" value="adminDrPqzwT" />
-      <property name="password" value="aGx6cL7EgMbI" />
+      <property name="password" value="aGx6cL7EgMbI" /> -->
       
       <!-- Production -->
-      <!-- <property name="url" value="jdbc:mysql://sonydbservice:3306/sonydb" />
-      <property name="username" value="sony" />
-      <property name="password" value="pa$$w0rd" /> -->
+      <property name="url" value="jdbc:mysql://mysql.cnnzz9iszw4r.ap-south-1.rds.amazonaws.com:3306/sony" />
+      <property name="username" value="root" />
+      <property name="password" value="pa$$w0rd" />
    </bean>
      
     <!-- This transaction manager is appropriate for applications that use a single JPA EntityManagerFactory for transactional data access. 
