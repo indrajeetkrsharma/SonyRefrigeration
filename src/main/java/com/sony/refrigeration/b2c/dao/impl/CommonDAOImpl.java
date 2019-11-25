@@ -1,7 +1,5 @@
 package com.sony.refrigeration.b2c.dao.impl;
 
-import java.util.Date;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -42,6 +40,4 @@ public class CommonDAOImpl implements CommonDAO
 	{
 		manager.persist(contactUs);
 	}
-
-
 }

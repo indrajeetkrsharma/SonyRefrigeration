@@ -34,12 +34,10 @@ public class Home
 	@RequestMapping("/home.html")
 	public ModelAndView loadLoginPage(HttpServletRequest request)
 	{
-		logger.debug("Hash Code testBeanA : "+(testBeanA.hashCode()));
-		logger.debug("Hash Code testBeanB : "+(testBeanB.hashCode()));
-		logger.debug("Test Bean refference equality check : "+(testBeanA == testBeanB));
-		logger.debug("Test Bean equality check : "+(testBeanA.equals(testBeanB)));
+		logger.info("Remote Address is  : "+request.getRemoteAddr());
 		String ipAddress = "183.82.196.46";
-		if(!"127.0.0.1".equals(request.getRemoteAddr().toString()))
+		
+		if(!"127.0.0.1".equals(request.getRemoteHost()))
 			ipAddress = request.getRemoteAddr().toString();
 		ModelAndView modelAndView = new ModelAndView("index");
 		VisitorHitAudit ob = new VisitorHitAudit();
