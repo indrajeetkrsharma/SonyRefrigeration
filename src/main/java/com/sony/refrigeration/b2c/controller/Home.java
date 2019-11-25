@@ -37,8 +37,17 @@ public class Home
 		logger.info("Remote Address is  : "+request.getRemoteAddr());
 		String ipAddress = "183.82.196.46";
 		
-		if(!"127.0.0.1".equals(request.getRemoteHost()))
+		if (request != null) {
+			ipAddress = request.getHeader("X-FORWARDED-FOR");
+            if (ipAddress == null || "".equals(ipAddress)) {
+            	ipAddress = request.getRemoteAddr();
+            	logger.info("X-Forward Remote Address is  : "+request.getRemoteAddr());
+            }
+        }
+		
+		if(!"127.0.0.1".equals(request.getRemoteAddr()))
 			ipAddress = request.getRemoteAddr().toString();
+		ipAddress = "183.82.196.46";
 		ModelAndView modelAndView = new ModelAndView("index");
 		VisitorHitAudit ob = new VisitorHitAudit();
 		ob.setIpAddress(request.getRemoteAddr().toString());
