@@ -2,7 +2,7 @@ pipeline {
     agent any
     
 	options {
-        skipDefaultCheckout(true)
+        skipDefaultCheckout()
         //buildDiscarder(logRotator(artifactDaysToKeepStr: '1', artifactNumToKeepStr: '1', daysToKeepStr: '5', numToKeepStr: '20'))
     }
     
