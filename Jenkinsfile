@@ -2,24 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage ('Compile Stage') {
+        stage ('CheckOut Code') {
 
             steps {
-                   sh 'mvn clean compile'
-            }
-        }
-
-        stage ('Testing Stage') {
-
-            steps {
-                    sh 'mvn test'
-            }
-        }
-
-
-        stage ('Deployment Stage') {
-            steps {
-                    sh 'mvn deploy'
+                   checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GitHub', url: 'https://github.com/indrajeetkrsharma/SonyRefrigeration.git']]])
             }
         }
     }
