@@ -16,7 +16,7 @@ pipeline {
         stage ('Build') {
         
         	steps {
-        		cleanCurrentDir()
+        		//cleanCurrentDir()
         		withMaven(maven : 'Maven') {
                     sh 'mvn clean compile'
                 }
