@@ -9,15 +9,14 @@ pipeline {
         stage ('CheckOut') {
 
             steps {
-           			tool name: 'Maven', type: 'maven'
             		checkout scm
             	  }
         	}
         
         stage ('Build') {
-        
         	steps {
-        		sh 'mvn clean install'
+        		def mvnHome = tool name: 'Maven', type: 'maven'
+        		sh "{$mvnHome}/bin/mvn clean install"
         	}
         }
     }
