@@ -1,19 +1,15 @@
-def mvn = ''
-
 pipeline {
     agent any
     
     options {
         skipDefaultCheckout()
     }
-    tools {
-    	mvn = tool (name: 'Maven', type: 'maven') + '/bin/mvn'
-    }
     
     stages {
         stage ('CheckOut') {
 
             steps {
+           			tool name: 'Maven', type: 'maven'
             		checkout scm
             	  }
         	}
