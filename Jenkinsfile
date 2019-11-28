@@ -17,7 +17,7 @@ pipeline {
         }
         
         stage ('Build') {
-        	sh "mvn clean build"
+        	sh 'mvn clean build'
         }
     }
 }
