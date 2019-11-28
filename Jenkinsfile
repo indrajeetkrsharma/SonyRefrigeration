@@ -4,7 +4,7 @@ pipeline {
     options {
         skipDefaultCheckout()
     }
-    
+    def mvn = tool (name: 'maven3', type: 'maven') + '/bin/mvn'
     stages {
         stage ('CheckOut') {
 
