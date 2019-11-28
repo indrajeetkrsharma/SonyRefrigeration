@@ -17,9 +17,9 @@ pipeline {
         
         	steps {
         		cleanCurrentDir()
-        		echo "PATH = ${PATH}"
-				echo "M2_HOME = ${M2_HOME}"
-        		sh "mvn clean install"
+        		withMaven(maven : 'Maven') {
+                    sh 'mvn clean compile'
+                }
         	}
         }
     }
