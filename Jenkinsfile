@@ -1,6 +1,11 @@
 pipeline {
     agent any
     
+    tools {
+      // Install the Maven version configured as "M3" and add it to the path.
+      maven "Maven"
+   }
+    
     options {
         skipDefaultCheckout()
     }
@@ -17,9 +22,7 @@ pipeline {
         
         	steps {
         		//cleanCurrentDir()
-        		withMaven(maven : 'Maven') {
-                    sh 'mvn clean compile'
-                }
+                    sh 'mvn clean install'
         	}
         }
     }
