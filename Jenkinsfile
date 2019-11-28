@@ -14,9 +14,9 @@ pipeline {
         	}
         
         stage ('Build') {
-        	cleanCurrentDir()
         
         	steps {
+        		cleanCurrentDir()
         			script {
         				def mvn = tool (name: 'Maven', type: 'maven') + '/bin/mvn'
         			}
