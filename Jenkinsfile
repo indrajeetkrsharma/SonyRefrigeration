@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 pipeline {
-    agent any
+    agent none
     
     options {
         skipDefaultCheckout()
@@ -17,8 +17,9 @@ pipeline {
         
         stage ('Build') {
         	steps {
-	        	mvnHome = tool name: 'Maven3', type: 'maven'		
-	        	sh "{$mvnHome}/bin/mvn clean install"
+	        	//mvnHome = tool name: 'Maven3', type: 'maven'		
+	        	//sh "{$mvnHome}/bin/mvn clean install"
+	        	sh "/opt/maven/apache-maven-3.6.2/bin/mvn clean install"
 	        }
         }
     }
