@@ -1,1 +1,0 @@
-http://login.bulksmsgateway.in/sendmessage.php?user=${user}&password=${password}&mobile=${mobilenumber}&message=${message}&sender=${sender}&type=${type}&encoding=utf-8
